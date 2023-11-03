@@ -74,9 +74,9 @@ fun InstructionScreen(
                     .clip(RoundedCornerShape(35)),
                 colors = topAppBarColors(
                     containerColor = if (isSystemInDarkTheme()) {
-                        MaterialTheme.colorScheme.primaryContainer
+                        MaterialTheme.colorScheme.onSecondaryContainer
                     } else {
-                        MaterialTheme.colorScheme.onPrimaryContainer
+                        MaterialTheme.colorScheme.secondaryContainer
                     }
                 )
             )

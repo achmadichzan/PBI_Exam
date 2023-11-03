@@ -51,7 +51,6 @@ fun AboutScreen(
     themeViewModel: ThemeViewModel = viewModel(),
 ) {
     val scrollBehavior = TopAppBarDefaults.pinnedScrollBehavior()
-    val isDarkMode = isSystemInDarkTheme()
     val context = LocalContext.current
 
     val dataStoreutil = DataStoreUtil(context)
@@ -88,9 +87,9 @@ fun AboutScreen(
                     .clip(RoundedCornerShape(35)),
                 colors = topAppBarColors(
                     containerColor = if (isSystemInDarkTheme()) {
-                        MaterialTheme.colorScheme.primaryContainer
+                        MaterialTheme.colorScheme.onSecondaryContainer
                     } else {
-                        MaterialTheme.colorScheme.onPrimaryContainer
+                        MaterialTheme.colorScheme.secondaryContainer
                     }
                 ),
                 actions = {
@@ -148,8 +147,6 @@ fun AboutScreen(
                     fontWeight = FontWeight.Normal,
                     fontSize = 14.sp
                 )
-
-                val context = LocalContext.current
 
                 LazyHorizontalGrid(
                     rows = GridCells.Adaptive(80.dp),

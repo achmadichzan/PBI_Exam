@@ -36,21 +36,13 @@ android {
 
     buildTypes {
 
-create("benchmark") {
-    initWith(buildTypes.getByName("release"))
-    signingConfig = signingConfigs.getByName("debug")
-    matchingFallbacks += listOf("release")
-    isDebuggable = false
-}
-        //        debug {
-//            isMinifyEnabled = true
-//            isShrinkResources = true
-//            isCrunchPngs = true
-//            proguardFiles(
-//                getDefaultProguardFile("proguard-android-optimize.txt"),
-//                "proguard-rules.pro"
-//            )
-//        }
+    create("benchmark") {
+        initWith(buildTypes.getByName("release"))
+        signingConfig = signingConfigs.getByName("debug")
+        matchingFallbacks += listOf("release")
+        isDebuggable = false
+    }
+
 //        val debug:ApplicationBuildType by getting {
 //            applicationIdSuffix = ".debug"
 //        }

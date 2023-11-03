@@ -49,8 +49,8 @@ fun ThemeSwitcher(
         targetValue = if (darkTheme) 0.dp else size,
         animationSpec = animationSpec, label = ""
     )
-    var switchState by remember {themeViewModel.isDarkThemeEnabled }
     val coroutineScope = rememberCoroutineScope()
+    var switchState by remember { themeViewModel.isDarkThemeEnabled }
 
 //    Box(modifier = Modifier
 //        .width(size * 2)

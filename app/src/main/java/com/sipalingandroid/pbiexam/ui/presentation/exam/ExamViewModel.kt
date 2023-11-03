@@ -16,12 +16,16 @@ class ExamViewModel: ViewModel() {
         private set
 
     fun reloadBySwipe(onRefresh: () -> Unit) {
-        isRefreshing = true
-        onRefresh()
+        viewModelScope.launch {
+            isRefreshing = true
+            onRefresh()
+        }
     }
 
     fun stopReload() {
-        isRefreshing = false
+        viewModelScope.launch {
+            isRefreshing = false
+        }
     }
 
     fun onExamClick() {
