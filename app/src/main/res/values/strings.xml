@@ -1,0 +1,120 @@
+<resources>
+    <string name="app_name">PBI Exam</string>
+
+    <!--  Home Screen  -->
+    <string name="menu_home">Home</string>
+    <string name="pbi_exam">PBI Exam</string>
+    <string name="about_app">
+        This application serves as a prototype for the PBI Exam.
+        This application also requires an active internet connection.
+        Please ensure that your internet data is enabled.
+        \n
+        \nThe exam consists of 10 questions.
+        Nine of these are multiple choice, while the remaining one is an essay question.
+        \n
+        \nSimply click the button below to access the exam.
+    </string>
+    <string name="start">Start</string>
+    <string name="feedback">
+        We greatly value your feedback on the application.
+        Please take a moment to complete the feedback form after using it. Thank you!
+    </string>
+    <string name="feedback_link">Click this to access the feedback form.</string>
+    <string name="exam_dialog">
+        Are you certain about taking the exam?
+        \nOnce you click \'Yes\' button, you can\'t exit the app
+        until you swipe up from memory.
+    </string>
+
+    <!--  Exam Screen  -->
+    <string name="web_browser">Web Browser</string>
+    <string name="web_error">
+        <htmlData>
+            <![CDATA[
+                <html lang="id">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Error Page</title>
+                        <style>
+                            body {
+                                margin: 0;
+                                font-family: Arial, sans-serif;
+                            }
+
+                            .container {
+                                display: flex;
+                                justify-content: center;
+                                padding-top: 15vh;
+                                height: 100vh;
+                            }
+
+                            .content {
+                                text-align: center;
+                            }
+                        </style>
+                    </head>
+
+                    <body>
+                        <div class="container">
+                            <div class="content">
+                                <p>
+                                    Maaf, halaman tidak dapat dimuat. <br>
+                                    Pastikan Anda memiliki koneksi internet yang stabil.
+                                </p>
+                            </div>
+                        </div>
+                    </body>
+                </html>
+            ]]>
+        </htmlData>
+    </string>
+    <string name="snackbar">Make sure you have stable network connection.</string>
+    <string name="activate">Activate</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="exit">Press home screen and swipe up to exit the app.</string>
+
+    <!--  Instruction Screen  -->
+    <string name="menu_instruction">Instruction</string>
+    <string name="instruction">Instruction</string>
+    <string name="klik_teros">Bang udah bang, mending cari aktivitas produktif sana</string>
+    <string name="click_this">Click this to open the image</string>
+    <string name="click_again">Click again to close the image</string>
+    <string name="information">
+        Here are the exam instructions:
+    </string>
+    <string name="first_step">
+        1. Login with your NIM and password provided by the administrator.
+    </string>
+    <string name="second_step">
+        2. Click the \'Proceed\' button and enter the token if required.
+    </string>
+    <string name="third_step">
+        3. Take the exam
+        \nNotes:
+        \n\• You can reload the web page by swipe down
+        \n\• It\'s recommended to use \'Uncertain\' button if you\'re unsure about your answer.
+        \n\• If there is an essay question, don\'t forget to click \'Save response\' button.
+    </string>
+    <string name="fourth_step">
+        4. To view your score, please rotate your screen.
+    </string>
+
+    <!--  About Screen  -->
+    <string name="about_me">About me</string>
+    <string name="developer">This app is developed by:</string>
+    <string name="achmad_ichzan">Achmad Ichzan</string>
+    <string name="socials">Let\'s get in touch</string>
+
+    <string name="linkedin">LinkedIn</string>
+    <string name="instagram">Instagram</string>
+    <string name="github">GitHub</string>
+    <string name="solos">Solos</string>
+
+    <string name="linkedin_link">https://www.linkedin.com/in/achmadichzan/</string>
+    <string name="instagram_link">https://www.instagram.com/achmadichzan_/</string>
+    <string name="github_link">https://github.com/achmadichzan/</string>
+    <string name="solos_link">https://solos.work/@achmadichzan/</string>
+
+</resources>
