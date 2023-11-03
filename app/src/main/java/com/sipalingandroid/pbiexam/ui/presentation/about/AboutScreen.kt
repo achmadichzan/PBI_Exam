@@ -99,7 +99,7 @@ fun AboutScreen(
                             ThemeSwitcher(
                                 dataStoreUtil = dataStoreutil,
                                 themeViewModel = themeViewModel,
-                                size = 40.dp
+                                modifier = Modifier.padding(end = 8.dp)
                             )
                         }
                     )

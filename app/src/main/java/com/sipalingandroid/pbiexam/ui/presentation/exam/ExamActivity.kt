@@ -20,6 +20,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import com.sipalingandroid.pbiexam.R
 import com.sipalingandroid.pbiexam.ui.theme.PBIExamTheme
+import kotlinx.coroutines.*
 import java.util.Timer
 import java.util.TimerTask
 
@@ -62,13 +63,16 @@ class ExamActivity : ComponentActivity() {
         Log.d(TAG, "onCreate: Success")
     }
 
+    @OptIn(DelicateCoroutinesApi::class)
     override fun onPause() {
         super.onPause()
-        if (timer == null) {
-            myTimerTask = MyTimerTask(this@ExamActivity)
-            timer = Timer()
-            Thread.sleep(5000)
-            timer?.schedule(myTimerTask, 100, 100)
+        GlobalScope.launch(Dispatchers.Default) {
+            if (timer == null) {
+                myTimerTask = MyTimerTask(this@ExamActivity)
+                timer = Timer()
+                delay(5000)
+                timer?.schedule(myTimerTask, 100, 100)
+            }
         }
         Log.d(TAG, "onPause: Success. timer = $timer")
     }
