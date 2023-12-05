@@ -1,4 +1,7 @@
-# PBI_Exam
+<h1 align="center">
+    # PBI_Exam
+</h1>
+
 ### This project is built based on Achmad Ichzan's thesis at Alauddin State Islamic University of Makassar
 
 ## Watch the demo below
