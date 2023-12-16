@@ -11,7 +11,7 @@ androidComponents {
     onVariants {
         it.buildConfigFields.put(
             "BASE_URL", BuildConfigField(
-                "String", "\"https://pbiexam.000webhostapp.com/\"", "base url"
+                "String", "\"https://pbiexam.000webhostapp.com\"", "base url"
             )
         )
     }
@@ -88,24 +88,24 @@ android {
 
 dependencies {
 
-    implementation("androidx.core:core-ktx:1.9.0")
+    implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
     implementation("androidx.lifecycle:lifecycle-runtime-compose:2.6.2")
-    implementation("androidx.activity:activity-compose:1.8.0")
-    implementation("androidx.activity:activity-ktx:1.8.0")
+    implementation("androidx.activity:activity-compose:1.8.1")
+    implementation("androidx.activity:activity-ktx:1.8.1")
     implementation(platform("androidx.compose:compose-bom:2023.09.00"))
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
-    implementation("androidx.compose.foundation:foundation:1.5.3")
+    implementation("androidx.compose.foundation:foundation:1.5.4")
 
     implementation("androidx.core:core-splashscreen:1.1.0-alpha02")
 
     // Material 3
     implementation("androidx.compose.material3:material3:1.1.2")
 
-    implementation("androidx.compose.material:material:1.5.3")
-    implementation("androidx.compose.material:material-icons-extended:1.5.3")
+    implementation("androidx.compose.material:material:1.5.4")
+    implementation("androidx.compose.material:material-icons-extended:1.5.4")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
@@ -149,5 +149,5 @@ dependencies {
 //    implementation("com.exyte:animated-navigation-bar:1.0.0")
 
     // Google fonts
-    implementation("androidx.compose.ui:ui-text-google-fonts:1.5.3")
+    implementation("androidx.compose.ui:ui-text-google-fonts:1.5.4")
 }

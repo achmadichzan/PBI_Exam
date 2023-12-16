@@ -1,6 +1,5 @@
 package com.sipalingandroid.pbiexam.ui.presentation.exam
 
-import android.content.res.Configuration
 import android.graphics.Bitmap
 import android.util.Log
 import android.webkit.WebResourceError
@@ -19,11 +18,9 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
-import androidx.compose.ui.platform.rememberNestedScrollInteropConnection
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.google.accompanist.web.*
@@ -103,7 +100,7 @@ fun ExamScreen(
                         progress = loadingState.progress,
                         modifier = Modifier
                             .fillMaxWidth(1f)
-                            .height(4.dp)
+                            .height(3.dp)
                             .clip(RoundedCornerShape(100))
                             .align(Alignment.CenterHorizontally)
                     )
@@ -141,7 +138,7 @@ fun ExamScreen(
                 WebView(
                     state = state,
                     modifier = Modifier
-                        .padding(top = 4.dp, bottom = 4.dp)
+                        .offset(y = 4.dp)
                         .height((height.value * density).dp)
                         .verticalScroll(rememberScrollState())
                         .clip(RoundedCornerShape(2)),
